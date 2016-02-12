@@ -6,7 +6,7 @@ RUN     npm install -g http-server
 WORKDIR /editor
 RUN curl -Lk https://github.com/swagger-api/swagger-editor/archive/v2.9.8.tar.gz 
 RUN ls
-RUN tar -xvf v2.9.8.tar.gz -C /editor
+#RUN tar -xvf v2.9.8.tar.gz -C /editor
 
 # The default port of the application
 EXPOSE  8080
