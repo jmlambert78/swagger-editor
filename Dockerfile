@@ -4,7 +4,8 @@ FROM node:4
 RUN     npm install -g http-server
 
 WORKDIR /editor
-RUN wget https://github.com/swagger-api/swagger-editor/releases/download/v2.9.7/swagger-editor.zip | unzip
+RUN wget https://github.com/swagger-api/swagger-editor/releases/download/v2.9.7/swagger-editor.zip
+RUN unzip swagger-editor.zip 
 #RUN ls
 #RUN tar -xvz v2.9.8.tar.gz -C /editor
 
