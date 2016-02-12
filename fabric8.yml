@@ -1,0 +1,14 @@
+---
+pipeline: "workflows/node/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "swagger-editor"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/swagger-editor"
+  Job: "http://172.30.133.146:80/job/swagger-editor"
+  Production: "http://172.30.219.202:80/kubernetes/pods?namespace=swagger-editor-production"
+  Room: "http://letschat.jml.oshift.paas.gemalto.com/#!/room/56bccc2e75368b1500bfab19"
+  Staging: "http://172.30.219.202:80/kubernetes/pods?namespace=swagger-editor-staging"
+environments:
+  Staging: "swagger-editor-staging"
+  Production: "swagger-editor-production"
+useLocalFlow: true
