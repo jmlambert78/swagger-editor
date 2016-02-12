@@ -3,8 +3,8 @@ FROM    mhart/alpine-node
 RUN     npm install -g http-server
 
 WORKDIR /editor
-RUN wget http://github.com/swagger-api/swagger-editor/releases/download/v2.9.8/swagger-editor.zip
-RUN unzip swagger-editor.zip
+RUN wget http://github.com/swagger-api/swagger-editor/archive/v2.9.8.tar.gz
+RUN tar -xvf  -C /editor
 
 # The default port of the application
 EXPOSE  8080
