@@ -1,4 +1,4 @@
-FROM node:5.3-onbuild
+FROM ubuntu
 #FROM    mhart/alpine-node
 
 RUN     npm install -g http-server
